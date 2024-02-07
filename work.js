@@ -296,22 +296,69 @@ for (let list of consumable_Meals){
 
 // the code below is an object oriented programming it's about classes, objects, methods constructors and other oriented fields
 
-class player{
-    score = 0;
-    Goal = 10;
+// class player{
+//     score = 0;
+//     Goal = 10;
 
-    pause(){
-        console.log("The game is paused");
+//     pause(){
+//         console.log("The game is paused");
+//     }
+
+//     exit(){
+//         console.log("You have exited from the game")
+//     }
+// }
+
+// const player1 = new player;
+// console.log(player1.score);
+// console.log(player1.Goal);
+// player1.pause();
+// player1.exit();
+
+
+
+
+
+//constructor codes are below----------------------------------------------------------------
+class student{
+    constructor(name, age, gpa, residential_status){
+        this.name = name;
+        this.age = age;
+        this.gpa =gpa;
+        this.residential_staus= residential_status;
+
+    };
+
+    Emotions(){
+        console.log(`${this.name} is feeling okay at the moment because of his ${this.gpa} gpa `);
     }
+};
 
-    exit(){
-        console.log("You have exited from the game")
+const student1 = new student("Abigail", 20 , 4.1,  "on-campus");
+console.log(student1.name);
+student1.Emotions();
+
+const student2 = new student("Derrick", 20, 4.0,  "off-campus");
+//console.log(student2.name +" "+ student1.name);
+console.log(student2.name);
+student2.Emotions();
+//===========================================================================================
+
+
+
+//-------------------------------------------------------------------------------------=====
+//the code below is for static methods. A static method belong to the class and not the objects
+class car{
+    static numberofCars=0;
+    constructor(model){
+        this.model =model;
+        car.numberofCars+=1;
     }
 }
 
-const player1 = new player;
-console.log(player1.score);
-console.log(player1.Goal);
-player1.pause();
-player1.exit();
+const car1 = new car("Ferrari");
+const car2 = new car("Benz");
 
+console.log(car.numberofCars);
+
+//=========------------------------------------------------------------------------------00-
