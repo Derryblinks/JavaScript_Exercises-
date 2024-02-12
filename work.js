@@ -1,3 +1,6 @@
+import {getArea, getPerimeter} from "./Math_util"
+console.log(getArea(5,3));
+console.log(getPerimeter(4,6));
 // let username;
 // document.getElementById("myButton").onclick = function(){
 //     username = document.getElementById("myText").value;
@@ -320,45 +323,279 @@ for (let list of consumable_Meals){
 
 
 //constructor codes are below----------------------------------------------------------------
-class student{
-    constructor(name, age, gpa, residential_status){
-        this.name = name;
-        this.age = age;
-        this.gpa =gpa;
-        this.residential_staus= residential_status;
+// class student{
+//     constructor(name, age, gpa, residential_status){
+//         this.name = name;
+//         this.age = age;
+//         this.gpa =gpa;
+//         this.residential_staus= residential_status;
 
-    };
+//     };
 
-    Emotions(){
-        console.log(`${this.name} is feeling okay at the moment because of his ${this.gpa} gpa `);
-    }
-};
+//     Emotions(){
+//         console.log(`${this.name} is feeling okay at the moment because of his ${this.gpa} gpa `);
+//     }
+// };
 
-const student1 = new student("Abigail", 20 , 4.1,  "on-campus");
-console.log(student1.name);
-student1.Emotions();
+// const student1 = new student("Abigail", 20 , 4.1,  "on-campus");
+// console.log(student1.name);
+// student1.Emotions();
 
-const student2 = new student("Derrick", 20, 4.0,  "off-campus");
-//console.log(student2.name +" "+ student1.name);
-console.log(student2.name);
-student2.Emotions();
-//===========================================================================================
+// const student2 = new student("Derrick", 20, 4.0,  "off-campus");
+// //console.log(student2.name +" "+ student1.name);
+// console.log(student2.name);
+// student2.Emotions();
+// //===========================================================================================
 
 
 
-//-------------------------------------------------------------------------------------=====
-//the code below is for static methods. A static method belong to the class and not the objects
-class car{
-    static numberofCars=0;
-    constructor(model){
-        this.model =model;
-        car.numberofCars+=1;
-    }
-}
+// //-------------------------------------------------------------------------------------=====
+// //the code below is for static methods. A static method belong to the class and not the objects
+// class car{
+//     static numberofCars=0;
+//     constructor(model){
+//         this.model =model;
+//         car.numberofCars+=1;
+//     }
+// }
 
-const car1 = new car("Ferrari");
-const car2 = new car("Benz");
+// const car1 = new car("Ferrari");
+// const car2 = new car("Benz");
 
-console.log(car.numberofCars);
+// console.log(car.numberofCars);
 
 //=========------------------------------------------------------------------------------00-
+
+
+
+
+//the code below is for Inheritance, tyring to see how inheritance works in object oriented programming 
+//===============---------------------------------------------------------------------------------------==
+
+
+// class Animal{
+//     alive=true;
+//     eat(){
+//         console.log(`the ${this.name} is eating`);
+//     }
+    
+//     breathe(){
+//         console.log(`the ${this.name} is breathing`);
+//     }
+// }
+// class fish extends Animal{
+//     alive=true;
+//     name = fish;
+//     // eat(){
+//     //     console.log(`the ${this.name} is eating`);
+//     // }
+    
+//     breathe(){
+//         console.log(`the ${this.name} is breathing`);
+//     }
+
+// }
+
+//  class Rabbit extends  Animal {
+   
+//      }
+
+//      const fish1 = new fish();
+//      const rabbit = new Rabbit();
+//      console.log(fish1.alive);
+//      fish1.breathe();
+//==========================================================================================================--------
+
+
+// the code below serves as the uses of the super keywork in JavaScript. 
+//the super keyword refers to the parent class and invokes contructors from the parent class
+// class Animal{
+//     constructor(name, age, speed){
+//         this.name = name;
+//         this.age = age;
+//         this.speed = speed;
+
+//     }
+
+// }
+
+// class Fish extends Animal{
+//     constructor(name, age, speed){
+//        super(name, age, speed)
+
+//     }
+// }
+
+// class Dog extends Animal{ 
+//     constructor(name, age, speed){
+//        super(name, age, speed);
+//     }
+
+//     }
+
+//     const dog = new Dog("poppi", 2, "fast");
+//     const fish = new Fish("tilapia", 1, "slow");
+
+//     console.log(fish.speed);
+//     console.log(dog.name);
+//     //this is the end of the super keywork usage, it's very nice to use and try and use it 
+
+
+    //----------------------------------------------------------=================---------------------------
+    //The following code demonstrates how to create a getter and setter for an object property using JavaScript.
+    //the code below is about getterr ans setters in object oriented programming
+
+    // class car{
+    //     constructor(power){
+    //         this._power = power;
+    //         this._gas = 25;
+
+    //     }
+    //     get_power(){
+    //         return (`a car with ${this._power}hp is a powerful car`);
+    //     }
+
+    //     set gas(value){
+    //         if(value>50){
+    //             this._gas= value;
+    //         }
+    //     }
+    // }
+
+    // car.gas = 500;
+    // const car1 = new car(45);
+    // console.log(car1._power);
+    // console.log(car.gas);
+
+    //// the above code is for getters and setters................................................
+    
+// the code below show an anonymour object  the code means you can also pass them as arguments 
+
+// class Card {
+//     constructor(key, value){
+//         this.key= key,
+//         this.value =value;
+
+//     }
+// };
+
+// const card1 = new Card("A", "suit");
+// const card2 = new Card("B", "Coat");
+// const card3 = new Card("A", "Shirt");
+// const card4 = new Card("C", "Tie");
+
+// let Cards=[card1, card2, card3, card4];
+// console.log(card1.key + card1.value)
+
+//let cards = [new Card("A", "suit"), new Card("B", "Coat"), new Card("A", "Shirt"), new Card("C", "Tie")];
+// console.log(card[0].key+card[0].value);
+//and you can call them by using their indexes the sample of the code is shown above
+
+
+
+//================================================================================================================
+//the code below is for try and catch error, it tells or try a code ang give back a response in the catch block
+//error = object with a description of something wen twrong 
+// Can't open a file
+// Lose connection 
+// User types incorrect input
+// Type_error
+
+// try{
+// let x = window.prompt("Hello please can you enter a number");
+// x = Number(x);
+
+// if(isNaN(x)) throw  "that wasn't a number"
+// console.log(`${x} is a number`);
+
+// if(x =="") throw "Please it's empty you didn't enter any thing"
+// }
+
+// catch(error){
+//     console.log(error)
+// }
+
+// finally{
+//     console.log("thanks for following the prompt")
+// }
+
+//===========================================================================================================
+//===========================================================================================================
+// the code below is for the setTimeout method (it's used to set time for an event to happen )
+
+
+// timer1 = setTimeout(speaker1, 3000);
+// timer2 = setTimeout(speaker2, 6000);
+// timer3 = setTimeout(speaker3, 9000);
+
+// function speaker1(){
+//     window.alert("Hello speaker one is speaking")
+// }
+
+// function speaker2(){
+//     window.alert("Hello speaker two is speaking")
+// }
+
+// function speaker3(){
+//     window.alert("Hello speaker three is speaking")
+// }
+
+// document.getElementById("button").onclick = function(){
+//     clearTimeout(timer1);
+//     clearTimeout(timer2);
+//     clearTimeout(timer3);
+//     console.log("you've spoken already")
+// }//=====================================================================================================
+
+/// the code below is used to set the count interval 
+
+// let count = 0;
+// let max = window.prompt("Hello enter any number");
+// max = Number(max);
+
+// const myTimer= setInterval(countUp, 1000);
+
+// function countUp(){
+//     count+=2;
+//     console.log(count);
+// if(count => max){
+//     clearInterval(myTimer);
+// }
+// }
+
+// the following codes talks about how to invoke new dates
+
+// let date = new  Date();
+//  date = date.toLocaleString();
+//  console.log(date);
+
+ //let month = date.getFullYear();
+//  let day = date.getDate();
+//  console.log(day);
+
+
+// the following code is for promise and callback functions 
+ 
+// let win = false;
+
+// const myPromise = new Promise((request, resolve)=>{
+//     if (win){ request("Hello he won")}
+//     else{resolve ("Hello he lost")};
+// });
+
+// myPromise
+// .then((successMessage)=>{
+// console.log(successMessage);
+// })
+// .catch ((errorMessage) => {
+// console.log(errorMessage);
+// })
+
+
+const wait = time => new Promise(request=>{
+    setTimeout((()=>request()),time)});
+
+wait(5000).then(()=>console.log('five seconds passed'));
+
+//so the above code was  about promises and callback functions 
+
