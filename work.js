@@ -1,4 +1,4 @@
-import {getArea, getPerimeter} from "./Math_util"
+import { getArea, getPerimeter } from "./Math_util";
 console.log(getArea(5,3));
 console.log(getPerimeter(4,6));
 // let username;
@@ -592,10 +592,143 @@ for (let list of consumable_Meals){
 // })
 
 
-const wait = time => new Promise(request=>{
-    setTimeout((()=>request()),time)});
+// const wait = time => new Promise(request=>{
+//     setTimeout((()=>request()),time)});
 
-wait(5000).then(()=>console.log('five seconds passed'));
+// wait(5000).then(()=>console.log('five seconds passed'));
 
 //so the above code was  about promises and callback functions 
+
+
+
+
+
+//the following code is used for writing document object module
+
+// const allDATA = document.dir(document);
+// console.log(allDATA);
+
+// document.title = "Myfirst title";
+// console.log(document.title);
+// console.log(doucment.URL);
+// document.location="https://google.com";
+// console.dir(document);
+//the  above code is used for document object module
+
+//the following code is used for dom manipulations 
+
+// let fruits = document.getElementsByName("fruits");
+
+// fruits.forEach(fruits =>{
+//     if(fruits.checked){
+//         console.log(fruits.value)
+//     }
+// });
+
+
+//;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+//[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+///the following continues with the Dom manipulations and how to insert content in an HTML page without touching the HTML SCRIPT
+// please the following deals with dom manipulations 
+// const FreshCreate = document.createElement("h1");
+// FreshCreate.textContent = window.prompt("Hello please enter your name"); //"Bro";
+// document.body.append(FreshCreate);
+
+
+// const myList = document.querySelector("#fruits");
+// const listItem = document.createElement("li");
+// listItem.textContent="WaterMellon";
+// myList.append(listItem);
+// //you can also use the prepand method
+// myList.prepend("WaterMellon");
+// myList.insertBefore(listItem, myList.getElementsByTagName("li")[2]);
+//the following above shows how to change html codes using JavaScript
+
+
+
+//========================================================================================
+//==========================================================================================
+//==========================================================================================
+//note the follwoing JavaScript
+//const Element = document.getElementById("myText");
+//Element.onload= doSomething
+//Element.onchange = doSomething
+//Element.onClick = doSomething
+//Element.onmouseover = doSomething
+//Element.onmouseout = doSomething;
+//Element.onmousedown = doSomething;
+//Element.onmouseup= doSomething;
+
+//function doSomething(){
+//window.prompt("Hello I'm doing something")
+//}
+//
+//window.prompt("Hello you are doing something");
+//
+
+// const innerDiv = document.getElementByID("first");
+// const outerDiv = document.getElementByID("second")
+
+// innerDiv.addEventListener("click" , changeBlue);
+// outerDiv.addEventListener("click", changeRed);
+
+// function changeBlue(){
+//     alert(`You selected ${this.id}`);
+//     this.style.backgroundColor ="Red"
+
+// }
+
+
+// function changeRed(){
+//     alert(`You selected ${this.id}`);
+//     this.style.backgroundColor ="Red"
+
+// }
+
+// window.addEventListener(keydown, event => console.log(event.key));
+
+
+
+
+//the following codes deals with how to add keyboard functionalities to your code in such a wasy that when a key is pressed , a command is taken
+//very interesting -------------------====================================================================
+// const keyDown= document.getElementById("cool");
+// window.addEventListener("keydown", move);
+// let x = 0;
+// let y = 0;
+
+// function move(event){
+//     switch(event.key){
+//     case "ArrowDown" :
+//         y+=5;
+//         cool.style.top = y + "px";
+//         break;
+    
+//     }
+
+// }
+
+
+
+//the following code deals with how to DRAW shapes for instance circles and other rectangles Using the CANVAS in 
+//the in the HTML before you can specify using the kind of shape you want to draw using the JAVASCRIPT
+///=============================================================
+// context.fillStyle = "lightblue";
+// context.strokeStyle = "darkblue";
+// context.lineWidth= 10;
+// context.beginPath();
+// context.arc(250,250,200, 0, 3*Math.PI);
+// context.strokeStyle();
+// context.fill();
+
+
+
+//the following are some window alerts 
+
+// window.open;
+// window.print;
+// window.alert;
+// window.close;
+//window.confirm;
+//window.prompt;
 
